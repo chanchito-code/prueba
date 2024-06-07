@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/inicio.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>side bar</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo_content">
+        <div class="logo">
+          <i class="bx bx-trash-alt"></i>
+          <div class="logo_name">SOJAL</div>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav_list" style="list-style-type: none">
+        <li>
+          <a href="#">
+            <i class="bx bx-search" id="srch"></i>
+            <input type="text" placeholder="Buscar" />
+          </a>
+          <span class="tooltip"> Buscar</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-news"></i>
+            <span class="links_name">Noticias</span>
+          </a>
+          <span class="tooltip"> Noticias</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-map-alt"></i>
+            <span class="links_name">Rutas</span>
+          </a>
+          <span class="tooltip"> Rutas</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-data"></i>
+            <span class="links_name">Información</span>
+          </a>
+          <span class="tooltip"> Informacion</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-stats"></i>
+            <span class="links_name">Estadisticas</span>
+          </a>
+          <span class="tooltip"> Estadisticas</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-bell-ring"></i>
+            <span class="links_name">Reportes</span>
+          </a>
+          <span class="tooltip"> Reportes</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Configuración</span>
+          </a>
+          <span class="tooltip"> Configuración</span>
+        </li>
+      </ul>
+      <div class="profile_content">
+        <div class="profile">
+          <div class="profile_details">
+            <img src="/images/user.jpg" alt="" />
+            <div class="name_job">
+              <div class="name">Administrador</div>
+              <div class="job">Web Designer</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </div>
+      </div>
+    </div>
+    <div class="home_content">
+      <div class="text">Home content</div>
+      <!-- Ejemplo de formulario simple-->
+    <h3>Formulario simple de captura de datos para reportes de basura</h3>
+    <div style="border: 2px solid; padding: 20px">
+      <form action="datos_b.php" method="get">
+        <!-- El elemento <label> define una etiqueta para
+el elemento <input> -->
+        <label for="txtusuario">USUARIO: </label>
+        <br />
+        <!-- Elemento <input> tipo campo de texto. El atributo id
+sirve para manipular localmente el elemento con JS y el
+atributo name sirve para enviar el dato capturado al backend
+-->
+        <input
+          type="text"
+          id="txtusuario"
+          name="fusuario"
+          maxlength="10"
+          size="12"
+          required
+        />
+        <br /><br />
+        <label for="txtfecha">FECHA: </label>
+        <br />
+        <input type="text" id="txtfecha" name="ffecha" required />
+        <br /><br />
+        <label for="txtdireccion">DIRECCION: </label>
+        <br />
+        <input type="text" id="txtdireccion" name="fdireccion" />
+        <br /><br />
+        <label for="txthora">HORA: </label>
+        <br />
+        <input type="text" id="txthora" name="fhora" />
+        <br /><br />
+    
+        <label for="sltbasura">Selecciona el tipo de basura a recoger:</label>
+        <select id="sltbasura" name="sltbasura">
+            <option value=""></option>
+            <option value="organica">Basura organica</option>
+            <option value="inorganica">Basura inorganica</option>
+            <option value="reciclable">Basura reciclable</option>
+            <option value="chatarra"> Basura Chatarra</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Enviar" />
+        <!--input type="reset", permite limpiar el formulario-->
+        <input type="reset" value="Borrar" />
+
+        
+      </form>
+    </div>
+  </body>
+</html>
+
+
+      <h3></h3>
+      <h3></h3>
+    </div>
+  </body>
+</html>
